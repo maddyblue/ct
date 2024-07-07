@@ -106,6 +106,14 @@ class Index extends Component {
 		);
 	};
 	render() {
+		const up = new URLSearchParams(new URL(window.location.href).search);
+		if (up.get('gred')) {
+			return Gred(up.get('gred'));
+		}
+		if (up.get('drink')) {
+			return Drink(up.get('drink'));
+		}
+
 		const have = Object.keys(this.state.have)
 			.sort()
 			.map(v => (
@@ -175,7 +183,7 @@ function DrinkLink(props) {
 	return (
 		<Link
 			className="br2 ph1 pv1 black bg-primary no-underline"
-			to={'/drink/' + props.Name}
+			to={'/?drink=' + props.Name}
 		>
 			{props.Name}
 		</Link>
@@ -188,14 +196,14 @@ function GredList(greds) {
 
 function GredLink(props) {
 	return (
-		<Link className="primary" to={'/gred/' + props.Name}>
+		<Link className="primary" to={'/?gred=' + props.Name}>
 			{props.Name}
 		</Link>
 	);
 }
 
-function Drink({ match }) {
-	const d = drinks[match.params.name];
+function Drink(drink) {
+	const d = drinks[drink];
 	if (!d) {
 		return 'unknown';
 	}
@@ -225,8 +233,7 @@ function Drink({ match }) {
 	);
 }
 
-function Gred({ match }) {
-	const gred = match.params.name;
+function Gred(gred) {
 	const made = Object.values(drinks)
 		.filter(v => v.ShortGreds.includes(gred))
 		.sort((a, b) => a.Name.localeCompare(b.Name));
@@ -255,8 +262,6 @@ function App() {
 		<Router>
 			<div className="sans-serif">
 				<Route path="/" exact component={Index} />
-				<Route path="/drink/:name" component={Drink} />
-				<Route path="/gred/:name" component={Gred} />
 			</div>
 		</Router>
 	);
