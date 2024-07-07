@@ -440,12 +440,12 @@
 	},
 	"Margarita": {
 		"Name": "Margarita",
-		"Link": "https://en.wikipedia.org/wiki/Margarita",
-		"Prep": "Pour all ingredients into shaker with ice. Shake well and strain into cocktail glass rimmed with salt.",
+		"Link": "https://punchdrink.com/articles/ultimate-best-margarita-tequila-cocktail-recipe/",
+		"Prep": "Shake with ice. Salt rim and garnish with lime wedge.",
 		"Greds": [
-			"3.1 2/3 oz (7 parts) tequila",
-			"2/3 oz (4 parts) Cointreau",
-			"1/2 oz (3 parts) lime juice"
+			"2 oz Siete Leguas blanco tequila (or El Tesoro blanco tequila)",
+			"1 oz cointreau",
+			"3/4 oz lime juice"
 		],
 		"ShortGreds": ["tequila", "cointreau", "lime juice"]
 	},
