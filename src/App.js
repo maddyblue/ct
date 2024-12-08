@@ -183,7 +183,7 @@ function DrinkLink(props) {
 	return (
 		<Link
 			className="br2 ph1 pv1 black bg-primary no-underline"
-			to={'/?drink=' + props.Name}
+			to={'/?drink=' + encodeURIComponent(props.Name)}
 		>
 			{props.Name}
 		</Link>
@@ -196,7 +196,7 @@ function GredList(greds) {
 
 function GredLink(props) {
 	return (
-		<Link className="primary" to={'/?gred=' + props.Name}>
+		<Link className="primary" to={'/?gred=' + encodeURIComponent(props.Name)}>
 			{props.Name}
 		</Link>
 	);
