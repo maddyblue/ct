@@ -1,12 +1,12 @@
 {
-	"Espresso Martini (Death & Co)" {
+	"Espresso Martini (Death & Co)": {
 		"Name": "Espresso Martini (Death & Co)",
 		"Prep": "Shake and strain into coup. Garnish with 3 coffee beans.",
 		"Greds": [
 			"1.5 oz vodka",
 			"0.75 oz Mr Black coffee liqueur",
 			"1 oz espresso or cold brew",
-			"0.25 oz demerara syrup",
+			"0.25 oz demerara syrup"
 		],
 		"ShortGreds": ["vodka", "coffee liqueur", "espresso", "demerara syrup"]
 	},
