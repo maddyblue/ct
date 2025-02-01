@@ -447,5 +447,19 @@
 			"dry vermouth",
 			"campari"
 		]
+	},
+	"Elderflower Margarita": {
+		"Name": "Elderflower Margarita",
+		"Prep": "Shake with ice, strain into large ice cube.",
+		"Greds": [
+			"2 oz tequila",
+			"1 oz lime juice",
+			".75 oz elderflower liqueur (St. Germain)"
+		],
+		"ShortGreds": [
+			"tequila",
+			"lime juice",
+			"elderflower liqueur"
+		]
 	}
 }
