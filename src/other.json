@@ -461,5 +461,21 @@
 			"lime juice",
 			"elderflower liqueur"
 		]
+	},
+	"Paper Plane": {
+		"Name": "Paper Plane",
+		"Prep": "Shake with ice, strain into large ice cube.",
+		"Greds": [
+			".75 oz bourbon",
+			".75 oz aperol",
+			".75 amaro nonino",
+			".75 oz lemon juice"
+		],
+		"ShortGreds": [
+			"bourbon",
+			"aperol",
+			"amaro nonino",
+			"lemon juice"
+		]
 	}
 }
